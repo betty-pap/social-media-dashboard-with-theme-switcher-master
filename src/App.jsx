@@ -1,69 +1,31 @@
+import {statistics, overviewData} from "./data"; 
+import OverviewCard from "./components/OverviewCard";
+import StatCard from "./components/StatCard";
+
+
 function App() {
+  
+
   return(
     <div>
+      <div className="header">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+
+      <button>Dark Mode</button>
+
+      {statistics.map((stat, index) => (  
+        <StatCard key={index} stat={stat} />
+      ))}
+    
+      <h4>Overview - Today</h4>
+
+      {overviewData.map((item, index) => (
+        <OverviewCard key={index} item={item}/>
+      ))}
       
-      Social Media Dashboard
-      Total Followers: 23,004
 
-      Dark Mode
-
-      
-
-      @nathanf
-      1987
-      Followers
-      12 Today
-
-      @nathanf
-      1044
-      Followers
-      99 Today
-
-      @realnathanf
-      11k
-      Followers
-      1099 Today
-
-      Nathan F.
-      8239
-      Subscribers
-      144 Today
-
-
-
-      Overview - Today
-
-      Page Views
-      87
-      3%
-
-      Likes
-      52
-      2%
-
-      Likes
-      5462
-      2257%
-
-      Profile Views
-      52k
-      1375%
-
-      Retweets
-      117
-      303%
-
-      Likes
-      507
-      553%
-
-      Likes
-      107
-      19%
-
-      Total Views
-      1407
-      12%
     </div>
   )
 }
