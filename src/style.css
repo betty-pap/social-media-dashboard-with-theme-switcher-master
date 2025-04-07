@@ -311,6 +311,8 @@ input:checked + .slider::after {
   .container {
     padding: 24px 11rem 30px 11rem;
     position: relative;
+    height: 100vh;
+    width: 100vw;
   }
 
   .container::before {
@@ -351,5 +353,9 @@ input:checked + .slider::after {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 28px;
+  }
+
+  .card-small {
+    padding: 24px 26px 24px 24px;
   }
 }
