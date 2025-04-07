@@ -4,15 +4,17 @@ const StatCard = ({stat}) => {
  
 
   return (
-    <div>
-      <div className="card-big">
+    <div className={` ${stat.pattern} card-big`}>
+      <div className="user">
+        <img src={stat.logo} alt="logo" />
         <h3>{stat.username}</h3>
-        <span>{stat.number}</span>
-        <h2>{stat.followers}</h2>
-        <small className={ stat.statColor === 'green' ? "stat-green" : "stat-red"}>{stat.statToday}</small>
       </div>
-
+      <span>{stat.number}</span>
+      <h2>{stat.followers}</h2>
+      <small className={ stat.statColor === 'green' ? "stat-green" : "stat-red"}>{stat.statToday}</small>
     </div>
+
+    
   )
 }
 
