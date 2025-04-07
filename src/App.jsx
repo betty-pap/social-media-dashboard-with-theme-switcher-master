@@ -1,4 +1,4 @@
-import {statistics, overviewData} from "./data"; 
+import {statistics, overviewData} from "../data"; 
 import OverviewCard from "./components/OverviewCard";
 import StatCard from "./components/StatCard";
 import { useState } from "react";
