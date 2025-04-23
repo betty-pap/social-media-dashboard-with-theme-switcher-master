@@ -26,7 +26,7 @@ function App() {
       
       <div className="big-cards-grid">
         {statistics.map((stat, index) => (
-          <StatCard key={index} stat={stat} />
+          <StatCard key={index} stat={stat}/>
         ))}
       </div>
     

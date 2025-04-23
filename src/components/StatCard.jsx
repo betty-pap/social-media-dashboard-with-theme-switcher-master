@@ -1,12 +1,11 @@
 import React from 'react'
 
 const StatCard = ({stat}) => {
- 
 
   return (
     <div className={` ${stat.pattern} card-big`}>
       <div className="user">
-        <img src={stat.logo} alt="logo" />
+        <img src={stat.logo} alt={stat.logo} />
         <h3>{stat.username}</h3>
       </div>
       <span>{stat.number}</span>
